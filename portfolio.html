@@ -21,9 +21,15 @@
                 <!-- logo and navigation-->
                 <a href="./index.html" class="logo link"><span class="logo-part">Web</span>Studio</a>
                 <!-- links -->
+                <button type="button" class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <svg class="mobile-icon" aria-label="mobile menu switcher">
+                        <use href="./images/icons.svg#icon-menu" class="icon-menu"></use>
+                    </svg>
+                </button>
+    
                 <ul class="site-nav list">
-                    <li class="item"><a href="./index.html" class="link">Studio</a></li>
-                    <li class="item"><a href="./portfolio.html" class="link active-link">Portfolio</a></li>
+                    <li class="item"><a href="./index.html" class="link active-link">Studio</a></li>
+                    <li class="item"><a href="./portfolio.html" class="link">Portfolio</a></li>
                     <li class="item"><a href="" class="link">Contacts</a></li>
                 </ul>
             </nav>
@@ -301,28 +307,86 @@
                     </ul>
     
                 </div>
-                <div class="footer-form">
-                    <form action="#" class="subscribe-form">
-                        <label for="email" class="email-label">Subscribe</label>
-                        <div class="subscribe-field">
-                            <input type="mail" id="email" placeholder="E-mail" class="mail-input">
-                            <button type="submit" class=" button subscribe-button">
-                                <span class="subscribe-button-content">
-                                    Subscribe
-                                    <svg class="subscribe-icon">
-                                        <use href="./images/icons.svg#icon-subscribe"></use>
-                                    </svg>
-                                </span>
-                            </button>
-                        </div>
-                    </form>
     
-                </div>
+                <form action="#" class="subscribe-form">
+                    <h3 class="title footer-form-title">Subscribe</h3>
+                    <div class="subscribe-field">
+                        <label for="email" class="subscribe-field">
+                            <input type="mail" name="email" id="email" placeholder="E-mail" class="mail-input">
+                        </label>
+                        <button type="submit" class=" button subscribe-button">
+                            Subscribe
+                            <svg class="subscribe-icon">
+                                <use href="./images/icons.svg#icon-subscribe"></use>
+                            </svg>
+    
+                        </button>
+                    </div>
+    
+                </form>
+    
+    
             </div>
     
         </div>
     
     </footer>
+
+    <!-- mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+            <svg class="mobile-icon-close">
+                <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+    
+        </button>
+        <div class="mobile-nav">
+            <ul class="mobile-menu list">
+                <li class="item"><a href="./index.html" class="link">Studio</a></li>
+                <li class="item"><a href="./portfolio.html" class="link">Portfolio</a></li>
+                <li class="item"><a href="" class="link">Contacts</a></li>
+            </ul>
+            <ul class="mobile-auth-nav list">
+                <li class="item"><a href="mailto:info@devstudio.com" class="link mail">info@devstudio.com</a></li>
+                <li class="item"><a href="tel:+110001111111" class="tel link">+11 (000) 111-11-11</a></li>
+            </ul>
+            <ul class="list soc-med-list">
+                <li class="item">
+                    <a href="" class="soc-med-link">
+                        <svg class="soc-med-icon">
+                            <use href="./images/icons.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="" class="soc-med-link">
+                        <svg class="soc-med-icon">
+                            <use href="./images/icons.svg#icon-twitter"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="" class="soc-med-link">
+                        <svg class="soc-med-icon">
+                            <use href="./images/icons.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="" class="soc-med-link">
+                        <svg class="soc-med-icon">
+                            <use href="./images/icons.svg#icon-linkedin"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+    
+        </div>
+    
+    
+    </div>
+    
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
