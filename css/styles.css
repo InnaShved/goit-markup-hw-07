@@ -20,9 +20,9 @@ body{
     
         
 }
-*{
+/* *{
     outline: 1px solid green;
-}
+} */
 h1, h2, h3, h4, h5, h6, p, ul {
     margin: 0;
     /* margin-bottom: 0; */
@@ -575,6 +575,17 @@ h1, h2, h3, h4, h5, h6, p, ul {
     background-repeat: no-repeat;
     background-size: cover;
    
+}
+@media (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .hero {
+        background: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg-image@2x.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }
 @media screen and (max-width: 767px) {
     .hero {
