@@ -603,7 +603,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
 
 
 
-@media screen and (min-device-pixel-ratio: 2),
+@media (min-device-pixel-ratio: 2),
 (-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
@@ -615,7 +615,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media  (min-width: 768px) and (max-width: 1199px) {
     .hero {
         background: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/tablet-bg-img.jpg);
         background-position: center;
@@ -629,10 +629,10 @@ h1, h2, h3, h4, h5, h6, p, ul {
         
     }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2),
-(-webkit-min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
+@media (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2),
+(min-width: 768px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2),
+(min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi),
+(min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
     .hero {
         background: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/tablet-bg-img@2x.jpg);
         background-position: center;
@@ -642,7 +642,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
         
     }
 }
-@media screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
     .hero {
         
         
@@ -657,10 +657,10 @@ h1, h2, h3, h4, h5, h6, p, ul {
     }
 }
 
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
-(-webkit-min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
+@media (min-width: 1200px) and (min-device-pixel-ratio: 2),
+(min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2),
+(min-width: 1200px) and (min-resolution: 192dpi),
+(min-width: 1200px) and (min-resolution: 2dppx) {
     .hero {
         background: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg-image@2x.jpg);
         background-position: center;
